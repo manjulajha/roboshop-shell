@@ -23,7 +23,7 @@ echo -e "\e[36m>>>> installing the dependencies <<<<\e[0m"
 npm install
 
 echo -e "\e[36m>>>> copying catalogue systemd  <<<<\e[0m"
-cp catalogue.service /etc/systemd/system/catalogue.service
+cp /root/roboshop-shell/catalogue.service /etc/systemd/system/catalogue.service
 
 echo -e "\e[36m>>>> Restarting the services  <<<<\e[0m"
 systemctl daemon-reload
@@ -31,7 +31,7 @@ systemctl enable catalogue
 systemctl restart catalogue
 
 echo -e "\e[36m>>>> copying mongo repo  <<<<\e[0m"
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+cp /root/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[36m>>>> mongodb client  <<<<\e[0m"
 yum install mongodb-org-shell -y
