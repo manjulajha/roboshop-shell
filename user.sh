@@ -21,7 +21,7 @@ echo -e "\e[36m>>>> install nodejs dependencies <<<<\e[0m"
 npm install
 
 echo -e "\e[36m>>>> Create application directory <<<<\e[0m"
-cp /root/roboshop-shell/user.service /etc/systemd/system/catalogue.service
+cp /root/roboshop-shell/user.service /etc/systemd/system/user.service
 
 echo -e "\e[36m>>>> restart service <<<<\e[0m"
 systemctl daemon-reload
