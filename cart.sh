@@ -22,6 +22,7 @@ npm install
 echo -e "\e[36m>>>> copy cart serviced <<<<\e[0m"
 cp /root/roboshop-shell/cart.service /etc/systemd/system/cart.service
 
+
 echo -e "\e[36m>>>> restart <<<<\e[0m"
 systemctl daemon-reload
 systemctl enable cart
