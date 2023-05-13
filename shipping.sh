@@ -4,6 +4,7 @@ yum install maven -y
 echo -e "\e[36m>>>> create app  user <<<<\e[0m"
 useradd roboshop
 
+
 echo -e "\e[36m>>>> create app directory <<<<\e[0m"
 rm -rf /app
 mkdir /app
